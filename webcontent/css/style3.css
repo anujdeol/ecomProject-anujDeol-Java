@@ -1,0 +1,30 @@
+body
+{
+   background:url(bg1.jpg);
+}
+.headerr
+{
+	display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	padding:15px;
+	background:white;
+	margin:25px;
+    border: 2px solid blue;
+    border-radius: 25px;
+}
+.Username
+{
+	color:blue;
+}
+.headerr1
+{
+	border:2px solid black;
+}
+.headerr h1{
+	border:5px solid black;
+}
+.price
+{
+	background:url(bg3.jpg);
+}

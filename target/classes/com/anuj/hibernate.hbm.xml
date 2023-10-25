@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.anuj">
+<class name="User" table="User125">
+<id name="UserName" column="id">
+</id>
+
+
+<list name="product" cascade="all">
+<key column="parent_id"/>
+<index column="ListIndex"/>
+<one-to-many class="Product"/>
+</list>
+</class>
+<class name="Product" table="Product125">
+<id name="id">
+<generator class="increment"/>
+</id>
+<property name="name"/>
+<property name="price"/>
+</class>
+</hibernate-mapping>

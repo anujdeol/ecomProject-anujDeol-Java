@@ -1,0 +1,1 @@
+alert("added to cart");
